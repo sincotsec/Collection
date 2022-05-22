@@ -1,0 +1,520 @@
+% !TeX root = sincotsec.tex
+
+\subsection{Натуральные корни}
+
+\begin{equation*} \begin{aligned}
+B(x) = E(x) &=
+  \alpha_0 x^0
++ \alpha_1 x^1
++ \alpha_2 x^2
++ \alpha_3 x^3
++ \ldots &
+&|x| < 1 \\
+%
+B(x) = D(x) &=   
+  \beta_{-1} x^{-1}
++ \beta_{-2} x^{-2}
++ \beta_{-3} x^{-3}
++ \ldots \\ &
++ \beta_0 x^0 \ln{x}
++ \beta_1 x^1 \ln{x}
++ \beta_2 x^2 \ln{x}
++ \beta_3 x^3 \ln{x}
++ \ldots \\ &
++ \gamma_0 x^0
++ \gamma_1 x^1
++ \gamma_2 x^2
++ \gamma_3 x^3
++ \ldots &
+&|x| > 1 \\
+\end{aligned} \end{equation*}
+
+\begin{equation*} \begin{aligned}
+\Upsilon(x) &= D(x) - E(x) \\ &=
+  \beta_{-1} x^{-1}
++ \beta_{-2} x^{-2}
++ \beta_{-3} x^{-3}
++ \ldots \\ &
++ \beta_0 x^0 \ln{x}
++ \beta_1 x^1 \ln{x}
++ \beta_2 x^2 \ln{x}
++ \beta_3 x^3 \ln{x}
++ \ldots \\ &
++ \gamma_0 x^0
++ \gamma_1 x^1
++ \gamma_2 x^2
++ \gamma_3 x^3
++ \ldots \\ &
+- \alpha_0 x^0
+- \alpha_1 x^1
+- \alpha_2 x^2
+- \alpha_3 x^3
++ \ldots \\
+\end{aligned} \end{equation*}
+
+\begin{equation*} \begin{aligned}
+&A(x) =
+  \theta_1 B{\left(\frac{x}{1} \right)}
++ \theta_2 B{\left(\frac{x}{2} \right)}
++ \theta_3 B{\left(\frac{x}{3} \right)}
++ \ldots
++ \theta_n B{\left(\frac{x}{n} \right)}
+\end{aligned} \end{equation*}
+
+\begin{equation*} \left| \begin{aligned}
+A(x) = \Psi(x) &=
+  \psi_0 x^0
++ \psi_1 x^1
++ \psi_2 x^2
++ \psi_3 x^3
++ \ldots &
+&|x| < 1 \\
+%
+A(x) = S_1(x) &= 
+  t_{(1,-1)} x^{-1}
++ t_{(1,-2)} x^{-2}
++ t_{(1,-3)} x^{-3}
++ \ldots \\ &
++ t_{(1,0)} x^0 \ln{x}
++ t_{(1,1)} x^1 \ln{x}
++ t_{(1,2)} x^2 \ln{x}
++ t_{(1,3)} x^3 \ln{x}
++ \ldots \\ &
++ s_{(1,0)} x^0
++ s_{(1,1)} x^1
++ s_{(1,2)} x^2
++ s_{(1,3)} x^3
++ \ldots &
+1 < &|x| < 2 \\
+%
+A(x) = S_2(x) &= 
+  t_{(2,-1)} x^{-1}
++ t_{(2,-2)} x^{-2}
++ t_{(2,-3)} x^{-3}
++ \ldots \\ &
++ t_{(2,0)} x^0 \ln{x}
++ t_{(2,1)} x^1 \ln{x}
++ t_{(2,2)} x^2 \ln{x}
++ t_{(2,3)} x^3 \ln{x}
++ \ldots \\ &
++ s_{(2,0)} x^0
++ s_{(2,1)} x^1
++ s_{(2,2)} x^2
++ s_{(2,3)} x^3
++ \ldots &
+2 < &|x| < 3 \\
+%
+A(x) = S_3(x) &= 
+  t_{(3,-1)} x^{-1}
++ t_{(3,-2)} x^{-2}
++ t_{(3,-3)} x^{-3}
++ \ldots \\ &
++ t_{(3,0)} x^0 \ln{x}
++ t_{(3,1)} x^1 \ln{x}
++ t_{(3,2)} x^2 \ln{x}
++ t_{(3,3)} x^3 \ln{x}
++ \ldots \\ &
++ s_{(3,0)} x^0
++ s_{(3,1)} x^1
++ s_{(3,2)} x^2
++ s_{(3,3)} x^3
++ \ldots &
+3 < &|x| < 4 \\
+%
+&\ldots \\
+%
+A(x) = S_n(x) &= 
+  t_{(n,-1)} x^{-1}
++ t_{(n,-2)} x^{-2}
++ t_{(n,-3)} x^{-3}
++ \ldots \\ &
++ t_{(n,0)} x^0 \ln{x}
++ t_{(n,1)} x^1 \ln{x}
++ t_{(n,2)} x^2 \ln{x}
++ t_{(n,3)} x^3 \ln{x}
++ \ldots \\ &
++ s_{(n,0)} x^0
++ s_{(n,1)} x^1
++ s_{(n,2)} x^2
++ s_{(n,3)} x^3
++ \ldots &
+n < &|x| \\
+\end{aligned} \right. \end{equation*}
+
+\begin{equation*} \left| \begin{aligned}
+\psi_0 &= \alpha_0 \left(
+  \frac{\theta_1}{1^0}
++ \frac{\theta_2}{2^0}
++ \frac{\theta_3}{3^0}
++ \ldots
++ \frac{\theta_n}{n^0} \right) \\
+%
+\psi_1 &= \alpha_1 \left(
+  \frac{\theta_1}{1^1}
++ \frac{\theta_2}{2^1}
++ \frac{\theta_3}{3^1}
++ \ldots
++ \frac{\theta_n}{n^1} \right) \\
+%
+\psi_2 &= \alpha_2 \left(
+  \frac{\theta_1}{1^2}
++ \frac{\theta_2}{2^2}
++ \frac{\theta_3}{3^2}
++ \ldots
++ \frac{\theta_n}{n^2} \right) \\
+%
+\psi_3 &= \alpha_3 \left(
+  \frac{\theta_1}{1^3}
++ \frac{\theta_2}{2^3}
++ \frac{\theta_3}{3^3}
++ \ldots
++ \frac{\theta_n}{n^3} \right) \\
+%
+&\ldots \\
+\end{aligned} \right. \end{equation*}
+
+\begin{equation*} \left| \begin{aligned}
+t_{(1,-1)} &=
+  \beta_{-1} \frac{\theta_1}{1^{-1}} \\
+%
+t_{(1,-2)} &=
+  \beta_{-2} \frac{\theta_1}{1^{-2}} \\
+%
+t_{(1,-3)} &=
+  \beta_{-3} \frac{\theta_1}{1^{-3}} \\
+%
+&\ldots \\
+%
+t_{(1,0)} &=
+  \beta_0 \frac{\theta_1}{1^0} \\
+%
+t_{(1,1)} &=
+  \beta_1 \frac{\theta_1}{1^1} \\
+%
+t_{(1,2)} &=
+  \beta_2 \frac{\theta_1}{1^2} \\
+%
+t_{(1,3)} &=
+  \beta_3 \frac{\theta_1}{1^3} \\
+%
+&\ldots \\
+%
+s_{(1,0)} &=
+  (\gamma_0 - \alpha_0) \frac{\theta_1}{1^0}
+- \beta_0 \frac{\theta_1 \ln{1}}{1^0}
++ \psi_0 \\
+%
+s_{(1,1)} &=
+  (\gamma_1 - \alpha_1) \frac{\theta_1}{1^1}
+- \beta_1 \frac{\theta_1 \ln{1}}{1^1}
++ \psi_1 \\
+%
+s_{(1,2)} &=
+  (\gamma_2 - \alpha_2) \frac{\theta_1}{1^2}
+- \beta_2 \frac{\theta_1 \ln{1}}{1^2}
++ \psi_2 \\
+%
+s_{(1,3)} &=
+  (\gamma_3 - \alpha_3) \frac{\theta_1}{1^3}
+- \beta_3 \frac{\theta_1 \ln{1}}{1^3}
++ \psi_3 \\
+%
+&\ldots \\
+\end{aligned} \right. \end{equation*}
+
+\begin{equation*} \left| \begin{aligned}
+t_{(2,-1)} &=
+  \beta_{-1} \left(
+  \frac{\theta_1}{1^{-1}}
++ \frac{\theta_2}{2^{-1}} \right) \\
+%
+t_{(2,-2)} &=
+  \beta_{-2} \left(
+  \frac{\theta_1}{1^{-2}}
++ \frac{\theta_2}{2^{-2}} \right) \\
+%
+t_{(2,-3)} &=
+  \beta_{-3} \left(
+  \frac{\theta_1}{1^{-3}}
++ \frac{\theta_2}{2^{-3}} \right) \\
+%
+&\ldots \\
+%
+t_{(2,0)} &=
+  \beta_0 \left(
+  \frac{\theta_1}{1^0}
++ \frac{\theta_2}{2^0} \right) \\
+%
+t_{(2,1)} &=
+  \beta_1 \left(
+  \frac{\theta_1}{1^1}
++ \frac{\theta_2}{2^1} \right) \\
+%
+t_{(2,2)} &=
+  \beta_2 \left(
+  \frac{\theta_1}{1^2}
++ \frac{\theta_2}{2^2} \right) \\
+%
+t_{(2,3)} &=
+  \beta_3 \left(
+  \frac{\theta_1}{1^3}
++ \frac{\theta_2}{2^3} \right) \\
+%
+&\ldots \\
+%
+s_{(2,0)} &=
+  (\gamma_0 - \alpha_0) \left(
+  \frac{\theta_1}{1^0}
++ \frac{\theta_2}{2^0} \right)
+- \beta_0 \left(
+  \frac{\theta_1 \ln{1}}{1^0}
++ \frac{\theta_2 \ln{2}}{2^0} \right)
++ \psi_0 \\
+%
+s_{(2,1)} &=
+  (\gamma_1 - \alpha_1) \left(
+  \frac{\theta_1}{1^1}
++ \frac{\theta_2}{2^1} \right)
+- \beta_1 \left(
+  \frac{\theta_1 \ln{1}}{1^1}
++ \frac{\theta_2 \ln{2}}{2^1} \right)
++ \psi_1 \\
+%
+s_{(2,2)} &=
+  (\gamma_2 - \alpha_2) \left(
+  \frac{\theta_1}{1^2}
++ \frac{\theta_2}{2^2} \right)
+- \beta_2 \left(
+  \frac{\theta_1 \ln{1}}{1^2}
++ \frac{\theta_2 \ln{2}}{2^2} \right)
++ \psi_2 \\
+%
+s_{(2,3)} &=
+  (\gamma_3 - \alpha_3) \left(
+  \frac{\theta_1}{1^3}
++ \frac{\theta_2}{2^3} \right)
+- \beta_3 \left(
+  \frac{\theta_1 \ln{1}}{1^3}
++ \frac{\theta_2 \ln{2}}{2^3} \right)
++ \psi_3 \\
+%
+&\ldots \\
+\end{aligned} \right. \end{equation*}
+
+\begin{equation*} \left| \begin{aligned}
+t_{(3,-1)} &=
+  \beta_{-1} \left(
+  \frac{\theta_1}{1^{-1}}
++ \frac{\theta_2}{2^{-1}}
++ \frac{\theta_3}{3^{-1}} \right) \\
+%
+t_{(3,-2)} &=
+  \beta_{-2} \left(
+  \frac{\theta_1}{1^{-2}}
++ \frac{\theta_2}{2^{-2}}
++ \frac{\theta_3}{3^{-2}} \right) \\
+%
+t_{(3,-3)} &=
+  \beta_{-3} \left(
+  \frac{\theta_1}{1^{-3}}
++ \frac{\theta_2}{2^{-3}}
++ \frac{\theta_3}{3^{-3}} \right) \\
+%
+&\ldots \\
+%
+t_{(3,0)} &=
+  \beta_0 \left(
+  \frac{\theta_1}{1^0}
++ \frac{\theta_2}{2^0}
++ \frac{\theta_3}{3^0} \right) \\
+%
+t_{(3,1)} &=
+  \beta_1 \left(
+  \frac{\theta_1}{1^1}
++ \frac{\theta_2}{2^1}
++ \frac{\theta_3}{3^1} \right) \\
+%
+t_{(3,2)} &=
+  \beta_2 \left(
+  \frac{\theta_1}{1^2}
++ \frac{\theta_2}{2^2}
++ \frac{\theta_3}{3^2} \right) \\
+%
+t_{(3,3)} &=
+  \beta_3 \left(
+  \frac{\theta_1}{1^3}
++ \frac{\theta_2}{2^3}
++ \frac{\theta_3}{3^3} \right) \\
+%
+&\ldots \\
+%
+s_{(3,0)} &=
+  (\gamma_0 - \alpha_0) \left(
+  \frac{\theta_1}{1^0}
++ \frac{\theta_2}{2^0}
++ \frac{\theta_3}{3^0} \right)
+- \beta_0 \left(
+  \frac{\theta_1 \ln{1}}{1^0}
++ \frac{\theta_2 \ln{2}}{2^0}
++ \frac{\theta_3 \ln{3}}{3^0} \right)
++ \psi_0 \\
+%
+s_{(3,1)} &=
+  (\gamma_1 - \alpha_1) \left(
+  \frac{\theta_1}{1^1}
++ \frac{\theta_2}{2^1}
++ \frac{\theta_3}{3^1} \right)
+- \beta_1 \left(
+  \frac{\theta_1 \ln{1}}{1^1}
++ \frac{\theta_2 \ln{2}}{2^1}
++ \frac{\theta_3 \ln{3}}{3^1} \right)
++ \psi_1 \\
+%
+s_{(3,2)} &=
+  (\gamma_2 - \alpha_2) \left(
+  \frac{\theta_1}{1^2}
++ \frac{\theta_2}{2^2}
++ \frac{\theta_3}{3^2} \right)
+- \beta_2 \left(
+  \frac{\theta_1 \ln{1}}{1^2}
++ \frac{\theta_2 \ln{2}}{2^2}
++ \frac{\theta_3 \ln{3}}{3^2} \right)
++ \psi_2 \\
+%
+s_{(3,3)} &=
+  (\gamma_3 - \alpha_3) \left(
+  \frac{\theta_1}{1^3}
++ \frac{\theta_2}{2^3}
++ \frac{\theta_3}{3^3} \right)
+- \beta_3 \left(
+  \frac{\theta_1 \ln{1}}{1^3}
++ \frac{\theta_2 \ln{2}}{2^3}
++ \frac{\theta_3 \ln{3}}{3^3} \right)
++ \psi_3 \\
+%
+&\ldots \\
+\end{aligned} \right. \end{equation*}
+
+\begin{equation*} \left| \begin{aligned}
+t_{(n,-1)} &=
+  \beta_{-1} \left(
+  \frac{\theta_1}{1^{-1}}
++ \frac{\theta_2}{2^{-1}}
++ \frac{\theta_3}{3^{-1}}
++ \ldots
++ \frac{\theta_n}{n^{-1}} \right) \\
+%
+t_{(n,-2)} &=
+  \beta_{-2} \left(
+  \frac{\theta_1}{1^{-2}}
++ \frac{\theta_2}{2^{-2}}
++ \frac{\theta_3}{3^{-2}}
++ \ldots
++ \frac{\theta_n}{n^{-2}} \right) \\
+%
+t_{(n,-3)} &=
+  \beta_{-3} \left(
+  \frac{\theta_1}{1^{-3}}
++ \frac{\theta_2}{2^{-3}}
++ \frac{\theta_3}{3^{-3}}
++ \ldots
++ \frac{\theta_n}{n^{-3}} \right) \\
+%
+&\ldots \\
+%
+t_{(n,0)} &=
+  \beta_0 \left(
+  \frac{\theta_1}{1^0}
++ \frac{\theta_2}{2^0}
++ \frac{\theta_3}{3^0}
++ \ldots
++ \frac{\theta_n}{n^0} \right) \\
+%
+t_{(n,1)} &=
+  \beta_1 \left(
+  \frac{\theta_1}{1^1}
++ \frac{\theta_2}{2^1}
++ \frac{\theta_3}{3^1}
++ \ldots
++ \frac{\theta_n}{n^1} \right) \\
+%
+t_{(n,2)} &=
+  \beta_2 \left(
+  \frac{\theta_1}{1^2}
++ \frac{\theta_2}{2^2}
++ \frac{\theta_3}{3^2}
++ \ldots
++ \frac{\theta_n}{n^2} \right) \\
+%
+t_{(n,3)} &=
+  \beta_0 \left(
+  \frac{\theta_1}{1^3}
++ \frac{\theta_2}{2^3}
++ \frac{\theta_3}{3^3}
++ \ldots
++ \frac{\theta_n}{n^3} \right) \\
+%
+&\ldots \\
+%
+s_{(n,0)} &=
+  (\gamma_0 - \alpha_0) \left(
+  \frac{\theta_1}{1^0}
++ \frac{\theta_2}{2^0}
++ \frac{\theta_3}{3^0}
++ \ldots
++ \frac{\theta_n}{n^0} \right)
+- \beta_0 \left(
+  \frac{\theta_1 \ln{1}}{1^0}
++ \frac{\theta_2 \ln{2}}{2^0}
++ \frac{\theta_3 \ln{3}}{3^0}
++ \ldots
++ \frac{\theta_n \ln{n}}{n^0} \right)
++ \psi_0 \\
+%
+s_{(n,1)} &=
+  (\gamma_1 - \alpha_1) \left(
+  \frac{\theta_1}{1^1}
++ \frac{\theta_2}{2^1}
++ \frac{\theta_3}{3^1}
++ \ldots
++ \frac{\theta_n}{n^1} \right)
+- \beta_1 \left(
+  \frac{\theta_1 \ln{1}}{1^1}
++ \frac{\theta_2 \ln{2}}{2^1}
++ \frac{\theta_3 \ln{3}}{3^1}
++ \ldots
++ \frac{\theta_n \ln{n}}{n^1} \right)
++ \psi_1 \\
+%
+s_{(n,2)} &=
+  (\gamma_2 - \alpha_2) \left(
+  \frac{\theta_1}{1^2}
++ \frac{\theta_2}{2^2}
++ \frac{\theta_3}{3^2}
++ \ldots
++ \frac{\theta_n}{n^2} \right)
+- \beta_2 \left(
+  \frac{\theta_1 \ln{1}}{1^2}
++ \frac{\theta_2 \ln{2}}{2^2}
++ \frac{\theta_3 \ln{3}}{3^2}
++ \ldots
++ \frac{\theta_n \ln{n}}{n^2} \right)
++ \psi_2 \\
+%
+s_{(n,3)} &=
+  (\gamma_3 - \alpha_3) \left(
+  \frac{\theta_1}{1^3}
++ \frac{\theta_2}{2^3}
++ \frac{\theta_3}{3^3}
++ \ldots
++ \frac{\theta_n}{n^3} \right)
+- \beta_3 \left(
+  \frac{\theta_1 \ln{1}}{1^3}
++ \frac{\theta_2 \ln{2}}{2^3}
++ \frac{\theta_3 \ln{3}}{3^3}
++ \ldots
++ \frac{\theta_n \ln{n}}{n^3} \right)
++ \psi_3 \\
+%
+&\ldots \\
+\end{aligned} \right. \end{equation*}

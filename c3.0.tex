@@ -1,0 +1,139 @@
+% !TeX root = sincotsec.tex
+
+\chapter{Функции}
+
+\section{Тригонометрические и гиперболические} %112233 section ===
+
+\begin{equation*}
+\left|
+\begin{aligned}
+&\sin{x} & &\sinh{x} \\
+&\cos{x} & &\cosh{x} \\
+&\tan{x} & &\tanh{x} \\
+&\cot{x} & &\coth{x} \\
+&\sec{x} & &\sech{x} \\
+&\csc{x} & &\csch{x} \\
+\end{aligned}
+\right.
+\end{equation*}
+
+\begin{equation*}
+\left|
+\begin{aligned}
+\sinh{x} &= - i \sin{(i x)} & \sin{x} &= - i \sinh{(i x)}  \\
+\cosh{x} &= \cos{(i x)} & \cos{x} &= \cosh{(i x)} \\
+\tanh{x} &= - i \tan{(i x)} & \tan{x} &= - i \tanh{(i x)} \\
+\coth{x} &= i \cot{(i x)} & \cot{x} &= i \coth{(i x)} \\
+\sech{x} &= \sec{(i x)} & \sec{x} &= \sech{(i x)} \\
+\csch{x} &= i \csc{(i x)} & \csc{x} &= i \csch{(i x)} \\
+\end{aligned}
+\right.
+\end{equation*}
+
+\begin{equation*}
+\begin{aligned}
+\cos{x} &= 
+\left[1 - \left(\frac{2 x}{\pi} \right)^2 \right] 
+\left[1 - \left(\frac{2 x}{3 \pi} \right)^2 \right]
+\left[1 - \left(\frac{2 x}{5 \pi} \right)^2 \right] 
+\left[1 - \left(\frac{2 x}{7 \pi} \right)^2 \right] 
+\cdot \ldots \\
+%
+\sin{x} &= x 
+\left[1 - \left(\frac{x}{\pi} \right)^2 \right] 
+\left[1 - \left(\frac{x}{2 \pi} \right)^2 \right]
+\left[1 - \left(\frac{x}{3 \pi} \right)^2 \right] 
+\left[1 - \left(\frac{x}{4 \pi} \right)^2 \right] 
+\cdot \ldots \\
+%
+\cosh{x} &= 
+\left[1 + \left(\frac{2 x}{\pi} \right)^2 \right] 
+\left[1 + \left(\frac{2 x}{3 \pi} \right)^2 \right]
+\left[1 + \left(\frac{2 x}{5 \pi} \right)^2 \right] 
+\left[1 + \left(\frac{2 x}{7 \pi} \right)^2 \right] 
+\cdot \ldots \\
+%
+\sinh{x} &= x 
+\left[1 + \left(\frac{x}{\pi} \right)^2 \right] 
+\left[1 + \left(\frac{x}{2 \pi} \right)^2 \right]
+\left[1 + \left(\frac{x}{3 \pi} \right)^2 \right] 
+\left[1 + \left(\frac{x}{4 \pi} \right)^2 \right] 
+\cdot \ldots \\
+\end{aligned}
+\end{equation*}
+
+\begin{equation*}
+\begin{aligned}
+%---------------------------------------
+\cos{x} 
+&= 1 
+- \frac{x^2}{2!} 
++ \frac{x^4}{4!} 
+- \frac{x^6}{6!} 
++ \frac{x^8}{8!} 
+- \frac{x^{10}}{10!} 
++ \ldots \\
+%---------------------------------------
+\sin{x} 
+&= \frac{x}{1!} 
+- \frac{x^3}{3!} 
++ \frac{x^5}{5!} 
+- \frac{x^7}{7!} 
++ \frac{x^9}{9!} 
+- \frac{x^{11}}{11!} 
++ \ldots \\
+%---------------------------------------
+\cosh{x} 
+&= 1 
++ \frac{x^2}{2!} 
++ \frac{x^4}{4!} 
++ \frac{x^6}{6!} 
++ \frac{x^8}{8!} 
++ \frac{x^{10}}{10!} 
++ \ldots \\
+%---------------------------------------
+\sinh{x} 
+&= \frac{x}{1!} 
++ \frac{x^3}{3!} 
++ \frac{x^5}{5!} 
++ \frac{x^7}{7!} 
++ \frac{x^9}{9!} 
++ \frac{x^{11}}{11!} 
++ \ldots \\
+%---------------------------------------
+\end{aligned}
+\end{equation*}
+
+\begin{equation*}
+\begin{aligned}
+%---------------------------------------
+\sec{x} &=
+\frac{1}{1 - \left(\displaystyle \frac{2 x}{\pi} \right)^2}
+\frac{1}{1 - \left(\displaystyle \frac{2 x}{3 \pi} \right)^2}
+\frac{1}{1 - \left(\displaystyle \frac{2 x}{5 \pi} \right)^2}
+\frac{1}{1 - \left(\displaystyle \frac{2 x}{7 \pi} \right)^2}
+\cdot \ldots \\
+%---------------------------------------
+\csc{x} &= \frac{1}{x} 
+\frac{1}{1 - \left(\displaystyle \frac{x}{\pi} \right)^2}
+\frac{1}{1 - \left(\displaystyle \frac{x}{2 \pi} \right)^2}
+\frac{1}{1 - \left(\displaystyle \frac{x}{3 \pi} \right)^2}
+\frac{1}{1 - \left(\displaystyle \frac{x}{4 \pi} \right)^2}
+\cdot \ldots \\
+%---------------------------------------
+\sech{x} &=
+\frac{1}{1 + \left(\displaystyle \frac{2 x}{\pi} \right)^2}
+\frac{1}{1 + \left(\displaystyle \frac{2 x}{3 \pi} \right)^2}
+\frac{1}{1 + \left(\displaystyle \frac{2 x}{5 \pi} \right)^2}
+\frac{1}{1 + \left(\displaystyle \frac{2 x}{7 \pi} \right)^2}
+\cdot \ldots \\
+%---------------------------------------
+\csch{x} &= \frac{1}{x} 
+\frac{1}{1 + \left(\displaystyle \frac{x}{\pi} \right)^2}
+\frac{1}{1 + \left(\displaystyle \frac{x}{2 \pi} \right)^2}
+\frac{1}{1 + \left(\displaystyle \frac{x}{3 \pi} \right)^2}
+\frac{1}{1 + \left(\displaystyle \frac{x}{4 \pi} \right)^2}
+\cdot \ldots \\
+%---------------------------------------
+\end{aligned}
+\end{equation*}

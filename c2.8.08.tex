@@ -1,0 +1,292 @@
+% !TeX root = sincotsec.tex
+
+\subsection{Произведение двоичных чисел}
+
+\begin{equation*}
+\begin{matrix}
+&&&&&& a_5 & a_4 & a_3 & a_2 & a_1 & a_0 \\
+&&&&&& b_5 & b_4 & b_3 & b_2 & b_1 & b_0 \\
+\hdotsfor[0.25]{12} \\
+&&&&&& a_5 b_0 & a_4 b_0 & a_3 b_0 & a_2 b_0 & a_1 b_0 & a_0 b_0 \\
+ &&&&& a_5 b_1 & a_4 b_1 & a_3 b_1 & a_2 b_1 & a_1 b_1 & a_0 b_1 \\
+  &&&& a_5 b_2 & a_4 b_2 & a_3 b_2 & a_2 b_2 & a_1 b_2 & a_0 b_2 \\
+   &&& a_5 b_3 & a_4 b_3 & a_3 b_3 & a_2 b_3 & a_1 b_3 & a_0 b_3 \\
+    && a_5 b_4 & a_4 b_4 & a_3 b_4 & a_2 b_4 & a_1 b_4 & a_0 b_4 \\
+     & a_5 b_5 & a_4 b_5 & a_3 b_5 & a_2 b_5 & a_1 b_5 & a_0 b_5 \\
+\hdotsfor[4]{12}
+\\
+  \Sigma_2(r_{10})
+& \Sigma_2(r_9)
+& \Sigma_2(r_8)
+& \Sigma_2(r_7)
+& \Sigma_2(r_6)
+& \Sigma_2(r_5)
+& \Sigma_2(r_4)
+& \Sigma_2(r_3)
+& \Sigma_2(r_2)
+& \Sigma_2(r_1)
+\\
+  \Sigma_4(r_9)
+& \Sigma_4(r_8)
+& \Sigma_4(r_7)
+& \Sigma_4(r_6)
+& \Sigma_4(r_5)
+& \Sigma_4(r_4)
+& \Sigma_4(r_3)
+& \Sigma_4(r_2)
+\\
+&&& \Sigma_8(r_5)
+\\
+\hdotsfor[0.25]{12}
+\\
+f_{11} & f_{10} & f_9 & f_8 & f_7 & f_6 & f_5 & f_4 & f_3 & f_2 & f_1 & f_0 \\
+\end{matrix}
+\end{equation*}
+
+\begin{equation*}
+\begin{aligned}
+p_0 &= (a_0 b_0) \\
+p_1 &= 
+(
+a_1 b_0, 
+a_0 b_1
+) \\
+p_2 &=
+(
+a_2 b_0, 
+a_1 b_1,
+a_0 b_2
+) \\
+p_3 &=
+(
+a_3 b_0,
+a_2 b_1, 
+a_1 b_2,
+a_0 b_3
+) \\
+p_4 &=
+(
+a_4 b_0,
+a_3 b_1, 
+a_2 b_2,
+a_1 b_3,
+a_0 b_4
+) \\
+p_5 &=
+(
+a_5 b_0,
+a_4 b_1, 
+a_3 b_2,
+a_2 b_3,
+a_1 b_4,
+a_0 b_5
+) \\
+p_6 &=
+(
+a_6 b_0,
+a_5 b_1, 
+a_4 b_2,
+a_3 b_3,
+a_2 b_4,
+a_1 b_5,
+a_0 b_6
+) \\
+\end{aligned}
+\end{equation*}
+
+\begin{equation*}
+\begin{aligned}
+r_0 &= [a_0 b_0] \\
+r_1 &= [
+a_1 b_0, 
+a_0 b_1
+] \\
+r_2 &= [
+a_2 b_0, 
+a_1 b_1,
+a_0 b_2,
+\Sigma_2(r_1)
+] \\
+r_3 &= [
+a_3 b_0,
+a_2 b_1, 
+a_1 b_2,
+a_0 b_3,
+\Sigma_2(r_2)
+] \\
+r_4 &= [
+a_4 b_0,
+a_3 b_1, 
+a_2 b_2,
+a_1 b_3,
+a_0 b_4,
+\Sigma_2(r_3),
+\Sigma_4(r_2)
+] \\
+r_5 &= [
+a_5 b_0,
+a_4 b_1, 
+a_3 b_2,
+a_2 b_3,
+a_1 b_4,
+a_0 b_5,
+\Sigma_2(r_4),
+\Sigma_4(r_3)
+] \\
+r_6 &= [
+a_6 b_0,
+a_5 b_1, 
+a_4 b_2,
+a_3 b_3,
+a_2 b_4,
+a_1 b_5,
+a_0 b_6,
+\Sigma_2(r_5),
+\Sigma_4(r_4)
+] \\
+\end{aligned}
+\end{equation*}
+
+\begin{equation*}
+\begin{aligned}
+f_6 = \Sigma_{1}(r_6) &=
+  \Sigma_{1}(p_6)
++ \Sigma_{1 - 1}(p_6) \Sigma_{2}(r_5)
++ \Sigma_{1 - 1}(p_6) \Sigma_{4}(r_4)
++ \Sigma_{1 - 1}(p_6) \Sigma_{8}(r_3)
++ \Sigma_{1 - 1}(p_6) \Sigma_{16}(r_2) \\ &
++ \Sigma_{1 - 1}(p_6) \Sigma_{32}(r_1)
++ \Sigma_{1 - 1}(p_6) \Sigma_{64}(r_0) \\
+%
+\Sigma_{2}(r_5) &=
+  \Sigma_{2}(p_5)
++ \Sigma_{2 - 1}(p_5) \Sigma_{2}(r_4)
++ \Sigma_{2 - 1}(p_5) \Sigma_{4}(r_3)
++ \Sigma_{2 - 1}(p_5) \Sigma_{8}(r_2)
++ \Sigma_{2 - 1}(p_5) \Sigma_{16}(r_1) \\ &
++ \Sigma_{2 - 1}(p_5) \Sigma_{32}(r_0)
++ \Sigma_{2 - 2}(p_5) \Sigma_{2}(r_4) \Sigma_{4}(r_3)
++ \Sigma_{2 - 2}(p_5) \Sigma_{2}(r_4) \Sigma_{8}(r_2)
++ \Sigma_{2 - 2}(p_5) \Sigma_{2}(r_4) \Sigma_{16}(r_1) \\ &
++ \Sigma_{2 - 2}(p_5) \Sigma_{2}(r_4) \Sigma_{32}(r_0)
++ \Sigma_{2 - 2}(p_5) \Sigma_{4}(r_3) \Sigma_{8}(r_2)
++ \Sigma_{2 - 2}(p_5) \Sigma_{4}(r_3) \Sigma_{16}(r_1)
++ \Sigma_{2 - 2}(p_5) \Sigma_{4}(r_3) \Sigma_{32}(r_0) \\ &
++ \Sigma_{2 - 2}(p_5) \Sigma_{8}(r_2) \Sigma_{16}(r_1)
++ \Sigma_{2 - 2}(p_5) \Sigma_{8}(r_2) \Sigma_{32}(r_0)
++ \Sigma_{2 - 2}(p_5) \Sigma_{16}(r_1) \Sigma_{32}(r_0) \\
+\Sigma_{4}(r_4) &=
+  \Sigma_{4}(p_4)
++ \Sigma_{4 - 1}(p_4) \Sigma_{2}(r_3)
++ \Sigma_{4 - 1}(p_4) \Sigma_{4}(r_2)
++ \Sigma_{4 - 1}(p_4) \Sigma_{8}(r_1)
++ \Sigma_{4 - 1}(p_4) \Sigma_{16}(r_0) \\ &
++ \Sigma_{4 - 2}(p_4) \Sigma_{2}(r_3) \Sigma_{4}(r_2)
++ \Sigma_{4 - 2}(p_4) \Sigma_{2}(r_3) \Sigma_{8}(r_1)
++ \Sigma_{4 - 2}(p_4) \Sigma_{2}(r_3) \Sigma_{16}(r_0)
++ \Sigma_{4 - 2}(p_4) \Sigma_{4}(r_2) \Sigma_{8}(r_1) \\ &
++ \Sigma_{4 - 2}(p_4) \Sigma_{4}(r_2) \Sigma_{16}(r_0)
++ \Sigma_{4 - 2}(p_4) \Sigma_{8}(r_1) \Sigma_{16}(r_0)
++ \Sigma_{4 - 3}(p_4) \Sigma_{2}(r_3) \Sigma_{4}(r_2) \Sigma_{8}(r_1)  \\ &
++ \Sigma_{4 - 3}(p_4) \Sigma_{2}(r_3) \Sigma_{4}(r_2) \Sigma_{16}(r_0)
++ \Sigma_{4 - 3}(p_4) \Sigma_{2}(r_3) \Sigma_{8}(r_1) \Sigma_{16}(r_0)
++ \Sigma_{4 - 3}(p_4) \Sigma_{4}(r_2) \Sigma_{8}(r_1) \Sigma_{16}(r_0) \\ &
++ \Sigma_{4 - 4}(p_4) \Sigma_{2}(r_3) \Sigma_{4}(r_2) \Sigma_{8}(r_1) \Sigma_{16}(r_0)
+ \\
+\end{aligned}
+\end{equation*}
+
+\begin{equation*}
+\begin{aligned}
+v_{(1,2)} &=
+  \Sigma_2(p_1) \\
+v_{(2,2)} &=
+  \Sigma_2(p_2)
++ \Sigma_1(p_2) \Sigma_2(p_1) \\
+v_{(2,4)} &=
+  \Sigma_3(p_2) \Sigma_2(p_1) \\
+v_{(3,2)} &=
+  \Sigma_2(p_3)
++ \Sigma_1(p_3) \Sigma_2(p_2)
++ \Sigma_1(p_3) \Sigma_1(p_2) \Sigma_2(p_1) \\
+v_{(3,4)} &=
+  \Sigma_4(p_3)
++ \Sigma_3(p_3) \Sigma_2(p_2)
++ \Sigma_3(p_3) \Sigma_1(p_2) \Sigma_2(p_1) \\
+v_{(4,2)} &=
+  \Sigma_2(p_4)
++ \Sigma_1(p_4) \Sigma_2(p_3)
++ \Sigma_1(p_4) \Sigma_1(p_3) \Sigma_2(p_2)
++ \Sigma_1(p_4) \Sigma_1(p_3) \Sigma_1(p_2) \Sigma_2(p_1)
++ \Sigma_1(p_4) \Sigma_3(p_2) \Sigma_2(p_1) \\
+v_{(4,4)} &=
+  \Sigma_4(p_4)
++ \Sigma_3(p_4) \Sigma_2(p_3)
++ \Sigma_3(p_4) \Sigma_1(p_3) \Sigma_2(p_2)
++ \Sigma_3(p_4) \Sigma_1(p_3) \Sigma_1(p_2) \Sigma_2(p_1)
++ \Sigma_3(p_4) \Sigma_3(p_2) \Sigma_2(p_1) \\ &
++ \Sigma_3(p_4) \Sigma_2(p_3) \Sigma_3(p_2) \Sigma_2(p_1) \\
+v_{(5,2)} &=
+  \Sigma_2(p_5)
++ \Sigma_1(p_5) \Sigma_2(p_4)
++ \Sigma_1(p_5) \Sigma_1(p_4) \Sigma_2(p_3)
++ \Sigma_1(p_5) \Sigma_1(p_4) \Sigma_1(p_3) \Sigma_2(p_2) \\ &
++ \Sigma_1(p_5) \Sigma_1(p_4) \Sigma_1(p_3) \Sigma_1(p_2) \Sigma_2(p_1)
++ \Sigma_1(p_5) \Sigma_1(p_4) \Sigma_3(p_2) \Sigma_2(p_1)
++ \Sigma_1(p_5) \Sigma_4(p_3)
++ \Sigma_1(p_5) \Sigma_3(p_3) \Sigma_2(p_2) \\ &
++ \Sigma_1(p_5) \Sigma_3(p_3) \Sigma_1(p_2) \Sigma_2(p_1)
++ \Sigma_2(p_4) \Sigma_4(p_3)
++ \Sigma_1(p_4) \Sigma_4(p_3) \Sigma_3(p_2) \Sigma_2(p_1)
++ \Sigma_2(p_4) \Sigma_3(p_3) \Sigma_2(p_2) \\ &
++ \Sigma_2(p_4) \Sigma_3(p_3) \Sigma_1(p_2) \Sigma_2(p_1)
+\end{aligned}
+\end{equation*}
+
+\begin{equation*}
+\begin{aligned}
+f_0 &= \Sigma_1(r_0) \\
+f_1 &= \Sigma_1(r_1) \\
+f_2 &= \Sigma_1(r_2) \\
+f_3 &= \Sigma_1(r_3) \\
+f_4 &= \Sigma_1(r_4) \\
+\end{aligned}
+\end{equation*}
+
+\begin{equation*}
+\begin{aligned}
+f_0 &=
+  \Sigma_1(p_0)
+\\
+f_1 &=
+  \Sigma_1(p_1)
+\\
+f_2 &=
+  \Sigma_1(p_2)
++ \Sigma_2(p_1)
+\\
+f_3 &=
+  \Sigma_1(p_3)
++ \Sigma_2(p_2)
++ \Sigma_1(p_2) \Sigma_2(p_1)
+\\
+f_4 &=
+  \Sigma_1(p_4)
++ \Sigma_2(p_3)
++ \Sigma_1(p_3) \Sigma_2(p_2)
++ \Sigma_1(p_3) \Sigma_1(p_2) \Sigma_2(p_1)
++ \Sigma_3(p_2) \Sigma_2(p_1)
+\\
+f_5 &=
+  \Sigma_1(p_5)
++ \Sigma_2(p_4)
++ \Sigma_1(p_4) \Sigma_2(p_3)
++ \Sigma_1(p_4) \Sigma_1(p_3) \Sigma_2(p_2)
++ \Sigma_1(p_4) \Sigma_1(p_3) \Sigma_1(p_2) \Sigma_2(p_1) \\
+&
++ \Sigma_1(p_4) \Sigma_3(p_2) \Sigma_2(p_1)
++ \Sigma_4(p_3)
++ \Sigma_3(p_3) \Sigma_2(p_2)
++ \Sigma_3(p_3) \Sigma_1(p_2) \Sigma_2(p_1)
+\end{aligned}
+\end{equation*}

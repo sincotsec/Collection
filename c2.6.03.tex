@@ -1,0 +1,256 @@
+% !TeX root = sincotsec.tex
+
+\subsection{Симметричные корни}
+
+\begin{equation*} \begin{aligned}
+B(x) &= \frac{1}{
+\left(1 - \displaystyle \frac{x^2}{c_1^2} \right)
+\left(1 - \displaystyle \frac{x^2}{c_2^2} \right)
+\left(1 - \displaystyle \frac{x^2}{c_3^2} \right) \cdot
+\ldots \cdot
+\left(1 - \displaystyle \frac{x^2}{c_n^2} \right)
+} \\ &
+= \frac{b_1}{1 - \cfrac{x^2}{c_1^2}}
++ \frac{b_2}{1 - \cfrac{x^2}{c_2^2}}
++ \frac{b_3}{1 - \cfrac{x^2}{c_3^2}}
++ \ldots
++ \frac{b_n}{1 - \cfrac{x^2}{c_n^2}} \\ &
+= \frac{\displaystyle \frac{b_1}{2}}{1 + \cfrac{x}{c_1}}
++ \frac{\displaystyle \frac{b_2}{2}}{1 + \cfrac{x}{c_2}}
++ \frac{\displaystyle \frac{b_3}{2}}{1 + \cfrac{x}{c_3}}
++ \ldots
++ \frac{\displaystyle \frac{b_n}{2}}{1 + \cfrac{x}{c_n}}
++ \frac{\displaystyle \frac{b_1}{2}}{1 - \cfrac{x}{c_1}}
++ \frac{\displaystyle \frac{b_2}{2}}{1 - \cfrac{x}{c_2}}
++ \frac{\displaystyle \frac{b_3}{2}}{1 - \cfrac{x}{c_3}}
++ \ldots
++ \frac{\displaystyle \frac{b_n}{2}}{1 - \cfrac{x}{c_n}} \\
+&|c_1| < |c_2| < |c_3| < \ldots < |c_n|
+\end{aligned} \end{equation*}
+
+\begin{equation*} \begin{aligned}
+b_1 &= \frac{1}{
+\left(1 - \displaystyle \frac{c_1^2}{c_2^2} \right)
+\left(1 - \displaystyle \frac{c_1^2}{c_3^2} \right) \cdot
+\ldots \cdot
+\left(1 - \displaystyle \frac{c_1^2}{c_{n - 1}^2} \right)
+\left(1 - \displaystyle \frac{c_1^2}{c_n^2} \right)} \\
+b_2 &= \frac{1}{
+\left(1 - \displaystyle \frac{c_2^2}{c_1^2} \right)
+\left(1 - \displaystyle \frac{c_2^2}{c_3^2} \right) \cdot
+\ldots \cdot
+\left(1 - \displaystyle \frac{c_2^2}{c_{n - 1}^2} \right)
+\left(1 - \displaystyle \frac{c_2^2}{c_n^2} \right)} \\
+b_3 &= \frac{1}{
+\left(1 - \displaystyle \frac{c_3^2}{c_1^2} \right)
+\left(1 - \displaystyle \frac{c_3^2}{c_2^2} \right) \cdot
+\ldots \cdot
+\left(1 - \displaystyle \frac{c_3^2}{c_{n - 1}^2} \right)
+\left(1 - \displaystyle \frac{c_3^2}{c_n^2} \right)} \\
+&\ldots \\
+b_n &= \frac{1}{
+\left(1 - \displaystyle \frac{c_n^2}{c_1^2} \right)
+\left(1 - \displaystyle \frac{c_n^2}{c_2^2} \right)
+\left(1 - \displaystyle \frac{c_n^2}{c_3^2} \right) \cdot
+\ldots \cdot
+\left(1 - \displaystyle \frac{c_n^2}{c_{n - 1}^2} \right)} \\
+\end{aligned} \end{equation*}
+
+\begin{equation*} \left| \begin{aligned}
+B(x) &= \Xi(x) & 
+&|x| < |c_1| \\
+%
+B(x) &= H_1(x) & 
+|c_1| < &|x| < |c_2| \\
+%
+B(x) &= H_2(x) & 
+|c_2| < &|x| < |c_3| \\
+%
+B(x) &= H_3(x) &
+|c_3| < &|x| < |c_4| \\
+&\ldots & & \\
+%
+B(x) &= H_n(x) &
+|c_n| < &|x| \\
+\end{aligned} \right. \end{equation*}
+
+\begin{equation*} \left| \begin{aligned}
+\Xi(x) &=
+  \xi_0 \elf_0(x)
++ \xi_2 \elf_2(x)  
++ \ldots \\
+%
+H_1(x) &= 
+  h_{(1,-2)} \elg_{-2}(x)
++ h_{(1,-4)} \elg_{-4}(x)
++ \ldots \\ &
++ j_{(1,0)} \elf_0(x)
++ j_{(1,2)} \elf_2(x)
++ \ldots \\
+%
+H_2(x) &= 
+  h_{(2,-2)} \elg_{-2}(x)
++ h_{(2,-4)} \elg_{-4}(x)
++ \ldots \\ &
++ j_{(2,0)} \elf_0(x)
++ j_{(2,2)} \elf_2(x)
++ \ldots \\
+%
+H_3(x) &= 
+  h_{(3,-2)} \elg_{-2}(x)
++ h_{(3,-4)} \elg_{-4}(x)
++ \ldots \\ &
++ j_{(3,0)} \elf_0(x)
++ j_{(3,2)} \elf_2(x)
++ \ldots \\
+%
+&\ldots \\
+%
+H_n(x) &= 
+  h_{(n,-2)} \elg_{-2}(x)
++ h_{(n,-4)} \elg_{-4}(x)
++ \ldots \\ &
++ j_{(n,0)} \elf_0(x)
++ j_{(n,2)} \elf_2(x)
++ \ldots \\
+\end{aligned} \right. \end{equation*}
+
+\begin{equation*} \left| \begin{aligned}
+\xi_0 &= \elg_{-1}(1) \left(
+  \frac{b_1}{c_1^0}
++ \frac{b_2}{c_2^0}
++ \frac{b_3}{c_3^0}
++ \ldots
++ \frac{b_n}{c_n^0} \right) \\
+%
+\xi_2 &= \elg_{-3}(1) \left(
+  \frac{b_1}{c_1^2}
++ \frac{b_2}{c_2^2}
++ \frac{b_3}{c_3^2}
++ \ldots
++ \frac{b_n}{c_n^2} \right) \\
+%
+&\ldots \\
+\end{aligned} \right. \end{equation*}
+%
+\begin{equation*} \left| \begin{aligned}
+%
+h_{(1,-2)} &=
+  \elf_1(1) \frac{b_1}{c_1^{-2}} \\
+%
+h_{(1,-4)} &=
+  \elf_3(1) \frac{b_1}{c_1^{-4}} \\
+%
+&\ldots \\
+%
+j_{(1,0)} &=
+- \elg_{-1}(1) \frac{b_1}{c_1^0}
++ \xi_0 \\
+%
+j_{(1,2)} &=
+- \elg_{-3}(1) \frac{b_1}{c_1^2}
++ \xi_2 \\
+%
+&\ldots \\
+\end{aligned} \right. \end{equation*}
+
+\begin{equation*} \left| \begin{aligned}
+h_{(2,-2)} &=
+  \elf_1(1) \left(
+  \frac{b_1}{c_1^{-2}}
++ \frac{b_2}{c_2^{-2}} \right) \\
+%
+h_{(2,-4)} &=
+  \elf_3(1) \left(
+  \frac{b_1}{c_1^{-4}}
++ \frac{b_2}{c_2^{-4}} \right) \\
+%
+&\ldots \\
+%
+j_{(2,0)} &=
+- \elg_{-1}(1) \left(
+  \frac{b_1}{c_1^0}
++ \frac{b_2}{c_2^0} \right)
++ \xi_0 \\
+%
+j_{(2,2)} &=
+- \elg_{-3}(1) \left(
+  \frac{b_1}{c_1^2}
++ \frac{b_2}{c_2^2} \right)
++ \xi_2 \\
+%
+&\ldots \\
+\end{aligned} \right. \end{equation*}
+%
+\begin{equation*} \left| \begin{aligned}
+%
+h_{(3,-2)} &=
+  \elf_1(1) \left(
+  \frac{b_1}{c_1^{-2}}
++ \frac{b_2}{c_2^{-2}}
++ \frac{b_3}{c_3^{-2}} \right) \\
+%
+h_{(3,-4)} &=
+  \elf_3(1) \left(
+  \frac{b_1}{c_1^{-4}}
++ \frac{b_2}{c_2^{-4}}
++ \frac{b_3}{c_3^{-4}} \right) \\
+%
+&\ldots \\
+%
+j_{(3,0)} &=
+- \elg_{-1}(1) \left(
+  \frac{b_1}{c_1^0}
++ \frac{b_2}{c_2^0}
++ \frac{b_3}{c_3^0} \right)
++ \xi_0 \\
+%
+j_{(3,2)} &=
+- \elg_{-3}(1) \left(
+  \frac{b_1}{c_1^2}
++ \frac{b_2}{c_2^2}
++ \frac{b_3}{c_3^2} \right)
++ \xi_2 \\
+%
+&\ldots \\
+\end{aligned} \right. \end{equation*}
+%
+\begin{equation*} \left| \begin{aligned}
+h_{(n,-2)} &=
+  \elf_1(1) \left(
+  \frac{b_1}{c_1^{-2}}
++ \frac{b_2}{c_2^{-2}}
++ \frac{b_3}{c_3^{-2}}
++ \ldots
++ \frac{b_n}{c_n^{-2}} \right) \\
+%
+h_{(n,-4)} &=
+  \elf_3(1) \left(
+  \frac{b_1}{c_1^{-4}}
++ \frac{b_2}{c_2^{-4}}
++ \frac{b_3}{c_3^{-4}}
++ \ldots
++ \frac{b_n}{c_n^{-4}} \right) \\
+%
+&\ldots \\
+%
+j_{(n,0)} &=
+- \elg_{-1}(1) \left(
+  \frac{b_1}{c_1^0}
++ \frac{b_2}{c_2^0}
++ \frac{b_3}{c_3^0}
++ \ldots
++ \frac{b_n}{c_n^0} \right)
++ \xi_0 \\
+%
+j_{(n,2)} &=
+- \elg_{-3}(1) \left(
+  \frac{b_1}{c_1^2}
++ \frac{b_2}{c_2^2}
++ \frac{b_3}{c_3^2}
++ \ldots
++ \frac{b_n}{c_n^2} \right)
++ \xi_2 \\
+%
+&\ldots \\
+\end{aligned} \right. \end{equation*}

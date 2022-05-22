@@ -1,0 +1,352 @@
+% !TeX root = sincotsec.tex
+
+\subsection{Симметричные натуральные корни}
+
+\begin{equation*} \begin{aligned}
+A(x) &=
+\frac{1}
+{
+  \left(1 - \displaystyle \frac{x^2}{1^2} \right)
+  \left(1 - \displaystyle \frac{x^2}{2^2} \right)
+  \left(1 - \displaystyle \frac{x^2}{3^2} \right)
+  \cdot \ldots \cdot
+  \left(1 - \displaystyle \frac{x^2}{n^2} \right)
+}
+= \frac{\theta_1}{1 - \cfrac{x^2}{1^2}}
++ \frac{\theta_2}{1 - \cfrac{x^2}{2^2}}
++ \frac{\theta_3}{1 - \cfrac{x^2}{3^2}}
++ \ldots
++ \frac{\theta_n}{1 - \cfrac{x^2}{n^2}} \\ &
+= \frac{\cfrac{\theta_1}{2}}{1 + \cfrac{x}{1}}
++ \frac{\cfrac{\theta_2}{2}}{1 + \cfrac{x}{2}}
++ \frac{\cfrac{\theta_3}{2}}{1 + \cfrac{x}{3}}
++ \ldots
++ \frac{\cfrac{\theta_n}{2}}{1 + \cfrac{x}{n}}
++ \frac{\cfrac{\theta_1}{2}}{1 - \cfrac{x}{1}}
++ \frac{\cfrac{\theta_2}{2}}{1 - \cfrac{x}{2}}
++ \frac{\cfrac{\theta_3}{2}}{1 - \cfrac{x}{3}}
++ \ldots
++ \frac{\cfrac{\theta_n}{2}}{1 - \cfrac{x}{n}} \\
+\end{aligned} \end{equation*}
+
+\begin{equation*} \begin{aligned}
+\theta_1 &= \frac{1}
+{
+  \left(1 - \displaystyle \frac{1^2}{2^2} \right)
+  \left(1 - \displaystyle \frac{1^2}{3^2} \right)
+  \cdot \ldots \cdot
+  \left(1 - \displaystyle \frac{1^2}{(n - 1)^2} \right)
+  \left(1 - \displaystyle \frac{1^2}{n^2} \right)
+} \\
+\theta_2 &= \frac{1}
+{
+  \left(1 - \displaystyle \frac{2^2}{1^2} \right)
+  \left(1 - \displaystyle \frac{2^2}{3^2} \right)
+  \cdot \ldots \cdot
+  \left(1 - \displaystyle \frac{2^2}{(n - 1)^2} \right)
+  \left(1 - \displaystyle \frac{2^2}{n^2} \right)
+} \\
+\theta_3 &= \frac{1}
+{
+  \left(1 - \displaystyle \frac{3^2}{1^2} \right)
+  \left(1 - \displaystyle \frac{3^2}{2^2} \right)
+  \cdot \ldots \cdot
+  \left(1 - \displaystyle \frac{3^2}{(n - 1)^2} \right)
+  \left(1 - \displaystyle \frac{3^2}{n^2} \right)
+} \\
+&\ldots \\
+\theta_n &= \frac{1}
+{
+  \left(1 - \displaystyle \frac{n^2}{1^2} \right)
+  \left(1 - \displaystyle \frac{n^2}{2^2} \right)
+  \left(1 - \displaystyle \frac{n^2}{3^2} \right)
+  \cdot \ldots \cdot
+  \left(1 - \displaystyle \frac{n^2}{(n - 1)^2} \right)
+} \\
+\end{aligned} \end{equation*}
+
+\begin{equation*} \left| \begin{aligned}
+A(x) = \Psi(x) &=
+  \psi_0 x^0 
++ \psi_2 x^2
++ \psi_4 x^4 
++ \psi_6 x^6 
++ \ldots &
+&|x| < 1 \\
+%
+A(x) = S_1(x) &= 
+  t_{(1,-2)} x^{-2}
++ t_{(1,-4)} x^{-4}
++ t_{(1,-6)} x^{-6}
++ \ldots \\ &
++ s_{(1,0)} x^0
++ s_{(1,2)} x^2
++ s_{(1,4)} x^4
++ s_{(1,6)} x^6
++ \ldots &
+1 < &|x| < 2 \\
+%
+A(x) = S_2(x) &= 
+  t_{(2,-2)} x^{-2}
++ t_{(2,-4)} x^{-4}
++ t_{(2,-6)} x^{-6}
++ \ldots \\ &
++ s_{(2,0)} x^0
++ s_{(2,2)} x^2
++ s_{(2,4)} x^4
++ s_{(2,6)} x^6
++ \ldots &
+2 < &|x| < 3 \\
+%
+A(x) = S_3(x) &= 
+  t_{(3,-2)} x^{-2}
++ t_{(3,-4)} x^{-4}
++ t_{(3,-6)} x^{-6}
++ \ldots \\ &
++ s_{(3,0)} x^0
++ s_{(3,2)} x^2
++ s_{(3,4)} x^4
++ s_{(3,6)} x^6
++ \ldots &
+3 < &|x| < 4 \\
+%
+&\ldots \\
+%
+A(x) = S_n(x) &= 
+  t_{(n,-2)} x^{-2}
++ t_{(n,-4)} x^{-4}
++ t_{(n,-6)} x^{-6}
++ \ldots \\ &
++ s_{(n,0)} x^0
++ s_{(n,2)} x^2
++ s_{(n,4)} x^4
++ s_{(n,6)} x^6
++ \ldots &
+n < &|x| \\
+\end{aligned} \right. \end{equation*}
+
+\begin{equation*} \left| \begin{aligned}
+\psi_0 &= \left(
+  \frac{\theta_1}{1^0}
++ \frac{\theta_2}{2^0}
++ \frac{\theta_3}{3^0}
++ \ldots
++ \frac{\theta_n}{n^0} \right) \\
+%
+\psi_2 &= \left(
+  \frac{\theta_1}{1^2}
++ \frac{\theta_2}{2^2}
++ \frac{\theta_3}{3^2}
++ \ldots
++ \frac{\theta_n}{n^2} \right) \\
+%
+\psi_4 &= \left(
+  \frac{\theta_1}{1^4}
++ \frac{\theta_2}{2^4}
++ \frac{\theta_3}{3^4}
++ \ldots
++ \frac{\theta_n}{n^4} \right) \\
+%
+\psi_6 &= \left(
+  \frac{\theta_1}{1^6}
++ \frac{\theta_2}{2^6}
++ \frac{\theta_3}{3^6}
++ \ldots
++ \frac{\theta_n}{n^6} \right) \\
+%
+&\ldots \\
+\end{aligned} \right. \end{equation*}
+
+\begin{equation*} \left| \begin{aligned}
+t_{(1,-2)} &=
+- \frac{\theta_1}{1^{-2}} \\
+%
+t_{(1,-4)} &=
+- \frac{\theta_1}{1^{-4}} \\
+%
+t_{(1,-6)} &=
+- \frac{\theta_1}{1^{-6}} \\
+%
+&\ldots \\
+%
+s_{(1,0)} &=
+- \frac{\theta_1}{1^0}
++ \psi_0 \\
+%
+s_{(1,2)} &=
+- \frac{\theta_1}{1^2}
++ \psi_2 \\
+%
+s_{(1,4)} &=
+- \frac{\theta_1}{1^4}
++ \psi_4 \\
+%
+s_{(1,6)} &=
+- \frac{\theta_1}{1^6}
++ \psi_6 \\
+%
+&\ldots \\
+\end{aligned} \right. \end{equation*}
+
+\begin{equation*} \left| \begin{aligned}
+t_{(2,-2)} &=
+- \left(
+  \frac{\theta_1}{1^{-2}}
++ \frac{\theta_2}{2^{-2}} \right) \\
+%
+t_{(2,-4)} &=
+- \left(
+  \frac{\theta_1}{1^{-4}}
++ \frac{\theta_2}{2^{-4}} \right) \\
+%
+t_{(2,-6)} &=
+- \left(
+  \frac{\theta_1}{1^{-6}}
++ \frac{\theta_2}{2^{-6}} \right) \\
+%
+&\ldots \\
+%
+s_{(2,0)} &=
+- \left(
+  \frac{\theta_1}{1^0}
++ \frac{\theta_2}{2^0} \right)
++ \psi_0 \\
+%
+s_{(2,2)} &=
+- \left(
+  \frac{\theta_1}{1^2}
++ \frac{\theta_2}{2^2} \right)
++ \psi_2 \\
+%
+s_{(2,4)} &=
+- \left(
+  \frac{\theta_1}{1^4}
++ \frac{\theta_2}{2^4} \right)
++ \psi_4 \\
+%
+s_{(2,6)} &=
+- \left(
+  \frac{\theta_1}{1^6}
++ \frac{\theta_2}{2^6} \right)
++ \psi_6 \\
+%
+&\ldots \\
+\end{aligned} \right. \end{equation*}
+
+\begin{equation*} \left| \begin{aligned}
+t_{(3,-2)} &=
+- \left(
+  \frac{\theta_1}{1^{-2}}
++ \frac{\theta_2}{2^{-2}}
++ \frac{\theta_3}{3^{-2}} \right) \\
+%
+t_{(3,-4)} &=
+- \left(
+  \frac{\theta_1}{1^{-4}}
++ \frac{\theta_2}{2^{-4}}
++ \frac{\theta_3}{3^{-4}} \right) \\
+%
+t_{(3,-6)} &=
+- \left(
+  \frac{\theta_1}{1^{-6}}
++ \frac{\theta_2}{2^{-6}}
++ \frac{\theta_3}{3^{-6}} \right) \\
+%
+&\ldots \\
+%
+s_{(3,0)} &=
+- \left(
+  \frac{\theta_1}{1^0}
++ \frac{\theta_2}{2^0}
++ \frac{\theta_3}{3^0} \right)
++ \psi_0 \\
+%
+s_{(3,2)} &=
+- \left(
+  \frac{\theta_1}{1^2}
++ \frac{\theta_2}{2^2}
++ \frac{\theta_3}{3^2} \right)
++ \psi_2 \\
+%
+s_{(3,4)} &=
+- \left(
+  \frac{\theta_1}{1^4}
++ \frac{\theta_2}{2^4}
++ \frac{\theta_3}{3^4} \right)
++ \psi_4 \\
+%
+s_{(3,6)} &=
+- \left(
+  \frac{\theta_1}{1^6}
++ \frac{\theta_2}{2^6}
++ \frac{\theta_3}{3^6} \right)
++ \psi_6 \\
+%
+&\ldots \\
+\end{aligned} \right. \end{equation*}
+
+\begin{equation*} \left| \begin{aligned}
+t_{(n,-2)} &=
+- \left(
+  \frac{\theta_1}{1^{-2}}
++ \frac{\theta_2}{2^{-2}}
++ \frac{\theta_3}{3^{-2}}
++ \ldots
++ \frac{\theta_n}{n^{-2}} \right) \\
+%
+t_{(n,-4)} &=
+- \left(
+  \frac{\theta_1}{1^{-4}}
++ \frac{\theta_2}{2^{-4}}
++ \frac{\theta_3}{3^{-4}}
++ \ldots
++ \frac{\theta_n}{n^{-4}} \right) \\
+%
+t_{(n,-6)} &=
+- \left(
+  \frac{\theta_1}{1^{-6}}
++ \frac{\theta_2}{2^{-6}}
++ \frac{\theta_3}{3^{-6}}
++ \ldots
++ \frac{\theta_n}{n^{-6}} \right) \\
+%
+&\ldots \\
+%
+s_{(n,0)} &=
+- \left(
+  \frac{\theta_1}{1^0}
++ \frac{\theta_2}{2^0}
++ \frac{\theta_3}{3^0}
++ \ldots
++ \frac{\theta_n}{n^0} \right)
++ \psi_0 \\
+%
+s_{(n,2)} &=
+- \left(
+  \frac{\theta_1}{1^2}
++ \frac{\theta_2}{2^2}
++ \frac{\theta_3}{3^2}
++ \ldots
++ \frac{\theta_n}{n^2} \right)
++ \psi_2 \\
+%
+s_{(n,4)} &=
+- \left(
+  \frac{\theta_1}{1^4}
++ \frac{\theta_2}{2^4}
++ \frac{\theta_3}{3^4}
++ \ldots
++ \frac{\theta_n}{n^4} \right)
++ \psi_4 \\
+%
+s_{(n,6)} &=
+- \left(
+  \frac{\theta_1}{1^6}
++ \frac{\theta_2}{2^6}
++ \frac{\theta_3}{3^6}
++ \ldots
++ \frac{\theta_n}{n^6} \right)
++ \psi_6 \\
+%
+&\ldots \\
+\end{aligned} \right. \end{equation*}

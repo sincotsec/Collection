@@ -1,0 +1,353 @@
+% !TeX root = sincotsec.tex
+
+\subsection{Произведение степеней простых операторов}
+
+\paragraph{Разбиения числа 1}
+
+\begin{equation*} \begin{aligned}
+  \mathrm{L}[1] &=
+  \frac{1!}{1!(1!)^1}
+  1! \mathrm{L}[1] \\
+\end{aligned} \end{equation*}
+
+\paragraph{Разбиения числа 2}
+
+\begin{equation*} \begin{aligned}
+  \mathrm{L}[2] &=
+  \frac{1!}{1!(1!)^1}
+  1! \mathrm{L}[2] \\
+\end{aligned} \end{equation*}
+
+\begin{equation*} \begin{aligned}
+  \mathrm{L}^2[1] &=
+  \frac{2!}{1!(2!)^1}
+  1! \mathrm{L}[2] \\ &
++ \frac{2!}{2!(1!)^2}
+  2! \mathrm{L}[1, 1] \\
+\end{aligned} \end{equation*}
+
+\paragraph{Разбиения числа 3}
+
+\begin{equation*} \begin{aligned}
+  \mathrm{L}[3] &=
+  \frac{1!}{1!(1!)^1}
+  1! \mathrm{L}[3] \\
+\end{aligned} \end{equation*}
+
+\begin{equation*} \begin{aligned}
+  \mathrm{L}[2] \mathrm{L}[1] &=
+  \frac{1!1!}{1!(1!1!)^1}
+  1! \mathrm{L}[3] \\ &
++ \frac{1!1!}{1!(1!0!)^1 \cdot 1!(0!1!)^1}
+  1!1! \mathrm{L}[2, 1] \\
+\end{aligned} \end{equation*}
+
+\begin{equation*} \begin{aligned}
+  \mathrm{L}^3[1] &=
+  \frac{3!}{1!(3!)^1}
+  1! \mathrm{L}[3] \\ &
++ \frac{3!}{1!(2!)^1 \cdot 1!(1!)^1}
+  1!1! \mathrm{L}[2, 1] \\ &
++ \frac{3!}{3!(1!)^3}
+  3! \mathrm{L}[1, 1, 1] \\
+\end{aligned} \end{equation*}
+
+\paragraph{Разбиения числа 4}
+
+\begin{equation*} \begin{aligned}
+  \mathrm{L}[4] &=
+  \frac{1!}{1!(1!)^1}
+  1! \mathrm{L}[4] \\
+\end{aligned} \end{equation*}
+
+\begin{equation*} \begin{aligned}
+  \mathrm{L}[3] \mathrm{L}[1] &=
+  \frac{1!1!}{1!(1!1!)^1}
+  1! \mathrm{L}[4] \\ &
++ \frac{1!1!}{1!(1!0!)^1 \cdot 1!(0!1!)^1}
+  1!1! \mathrm{L}[3, 1] \\
+\end{aligned} \end{equation*}
+
+\begin{equation*} \begin{aligned}
+  \mathrm{L}^2[2] &=
+  \frac{2!}{1!(2!)^1}
+  1! \mathrm{L}[4] \\ &
++ \frac{2!}{2!(1!)^2}
+  2! \mathrm{L}[2, 2] \\
+\end{aligned} \end{equation*}
+
+\begin{equation*} \begin{aligned}
+  \mathrm{L}[2] \mathrm{L}^2[1] &=
+  \frac{1!2!}{1!(1!2!)^1}
+  1! \mathrm{L}[4] \\ &
++ \frac{1!2!}{1!(1!1!)^1 \cdot 1!(0!1!)^1}
+  1!1! \mathrm{L}[3, 1] \\ &
++ \frac{1!2!}{1!(0!2!)^1 \cdot 1!(1!0!)^1}
+  2! \mathrm{L}[2, 2] \\ &
++ \frac{1!2!}{1!(1!0!)^1 \cdot 2!(0!1!)^2}
+  1!2! \mathrm{L}[2, 1, 1] \\
+\end{aligned} \end{equation*}
+
+\begin{equation*} \begin{aligned}
+  \mathrm{L}^4[1] &=
+  \frac{4!}{1!(4!)^1}
+  1! \mathrm{L}[4] \\ &
++ \frac{4!}{1!(3!)^1 \cdot 1!(1!)^1}
+  1!1! \mathrm{L}[3, 1] \\ &
++ \frac{4!}{2!(2!)^2}
+  2! \mathrm{L}[2, 2] \\ &
++ \frac{4!}{1!(2!)^1 \cdot 2!(1!)^2}
+  1!2! \mathrm{L}[2, 1, 1] \\ &
++ \frac{4!}{4!(1!)^4}
+  4! \mathrm{L}[1, 1, 1, 1] \\
+\end{aligned} \end{equation*}
+
+\paragraph{Разбиения числа 5}
+
+\begin{equation*} \begin{aligned}
+  \mathrm{L}[5] &=
+  \frac{1!}{1!(1!)^1}
+  1! \mathrm{L}[5] \\
+\end{aligned} \end{equation*}
+
+\begin{equation*} \begin{aligned}
+  \mathrm{L}[4] \mathrm{L}[1] &=
+  \frac{1!1!}{1!(1!1!)^1}
+  1! \mathrm{L}[5] \\ &
++ \frac{1!1!}{1!(1!0!)^1 \cdot 1!(0!1!)^1}
+  1!1! \mathrm{L}[4, 1] \\
+\end{aligned} \end{equation*}
+
+\begin{equation*} \begin{aligned}
+  \mathrm{L}[3] \mathrm{L}[2] &=
+  \frac{1!1!}{1!(1!1!)^1}
+  1! \mathrm{L}[5] \\ &
++ \frac{1!1!}{1!(1!0!)^1 \cdot 1!(0!1!)^1}
+  1!1! \mathrm{L}[3, 2] \\
+\end{aligned} \end{equation*}
+
+\begin{equation*} \begin{aligned}
+  \mathrm{L}[3] \mathrm{L}^2[1] &=
+  \frac{1!2!}{1!(1!2!)^1}
+  1! \mathrm{L}[5] \\ &
++ \frac{1!2!}{1!(1!1!)^1 \cdot 1!(0!1!)^1}
+  1!1! \mathrm{L}[4, 1] \\ &
++ \frac{1!2!}{1!(1!0!)^1 \cdot 1!(0!2!)^1}
+  1!1! \mathrm{L}[3, 2] \\ &
++ \frac{1!2!}{1!(1!0!)^1 \cdot 2!(0!1!)^2}
+  1!2! \mathrm{L}[3, 1, 1] \\
+\end{aligned} \end{equation*}
+
+\begin{equation*} \begin{aligned}
+  \mathrm{L}^2[2] \mathrm{L}[1] &=
+  \frac{2!1!}{1!(2!1!)^1}
+  1! \mathrm{L}[5] \\ &
++ \frac{2!1!}{1!(2!0!)^1 \cdot 1!(0!1!)^1}
+  1!1! \mathrm{L}[4, 1] \\ &
++ \frac{2!1!}{1!(1!1!)^1 \cdot 1!(1!0!)^1}
+  1!1! \mathrm{L}[3, 2] \\ &
++ \frac{2!1!}{2!(1!0!)^2 \cdot 1!(0!1!)^1}
+  2!1! \mathrm{L}[2, 2, 1] \\
+\end{aligned} \end{equation*}
+
+\begin{equation*} \begin{aligned}
+  \mathrm{L}[2] \mathrm{L}^3[1] &=
+  \frac{1!3!}{1!(1!3!)^1}
+  1! \mathrm{L}[5] \\ &
++ \frac{1!3!}{1!(1!2!)^1 \cdot 1!(0!1!)^1}
+  1!1! \mathrm{L}[4, 1] \\ &
++ \left(
+  \frac{1!3!}{1!(1!1!)^1 \cdot 1!(0!2!)^1}
++ \frac{1!3!}{1!(0!3!)^1 \cdot 1!(1!0!)^1}
+  \right)
+  1!1! \mathrm{L}[3, 2] \\ &
++ \frac{1!3!}{1!(1!1!)^1 \cdot 2!(0!1!)^2}
+  1!2! \mathrm{L}[3, 1, 1] \\ &
++ \frac{1!3!}{1!(1!0!)^1 \cdot 1!(0!2!)^1 \cdot 1!(0!1!)^1}
+  2!1! \mathrm{L}[2, 2, 1] \\ &
++ \frac{1!3!}{1!(1!0!)^1 \cdot 3!(0!1!)^3}
+  1!3! \mathrm{L}[2, 1, 1, 1] \\
+\end{aligned} \end{equation*}
+
+\begin{equation*} \begin{aligned}
+  \mathrm{L}^5[1] &=
+  \frac{5!}{1!(5!)^1}
+  1! \mathrm{L}[5] \\ &
++ \frac{5!}{1!(4!)^1 \cdot 1!(1!)^1}
+  1!1! \mathrm{L}[4, 1] \\ &
++ \frac{5!}{1!(3!)^1 \cdot 1!(2!)^1}
+  1!1! \mathrm{L}[3, 2] \\ &
++ \frac{5!}{1!(3!)^1 \cdot 2!(1!)^2}
+  1!2! \mathrm{L}[3, 1, 1] \\ &
++ \frac{5!}{2!(2!)^2 \cdot 1!(1!)^1}
+  2!1! \mathrm{L}[2, 2, 1] \\ &
++ \frac{5!}{1!(2!)^1 \cdot 3!(1!)^3}
+  1!3! \mathrm{L}[2, 1, 1, 1] \\ &
++ \frac{5!}{5!(1!)^5}
+  5! \mathrm{L}[1, 1, 1, 1, 1] \\
+\end{aligned} \end{equation*}
+
+\paragraph{Разбиения числа 6}
+
+\begin{equation*} \begin{aligned}
+  \mathrm{L}[6] &=
+  \frac{1!}{1!(1!)^1}
+  1! \mathrm{L}[6] \\
+\end{aligned} \end{equation*}
+
+\begin{equation*} \begin{aligned}
+  \mathrm{L}[5] \mathrm{L}[1] &=
+  \frac{1!1!}{1!(1!1!)^1}
+  1! \mathrm{L}[6] \\ &
++ \frac{1!1!}{1!(1!0!)^1 \cdot 1!(0!1!)^1}
+  1!1! \mathrm{L}[5, 1] \\
+\end{aligned} \end{equation*}
+
+\begin{equation*} \begin{aligned}
+  \mathrm{L}[4] \mathrm{L}[2] &=
+  \frac{1!1!}{1!(1!1!)^1}
+  1! \mathrm{L}[6] \\ &
++ \frac{1!1!}{1!(1!0!)^1 \cdot 1!(0!1!)^1}
+  1!1! \mathrm{L}[4, 2] \\
+\end{aligned} \end{equation*}
+
+\begin{equation*} \begin{aligned}
+  \mathrm{L}[4] \mathrm{L}^2[1] &=
+  \frac{1!2!}{1!(1!2!)^1}
+  1! \mathrm{L}[6] \\ &
++ \frac{1!2!}{1!(1!1!)^1 \cdot 1!(0!1!)^1}
+  1!1! \mathrm{L}[5, 1] \\ &
++ \frac{1!2!}{1!(1!0!)^1 \cdot 1!(0!2!)^1}
+  1!1! \mathrm{L}[4, 2] \\ &
++ \frac{1!2!}{1!(1!0!)^1 \cdot 2!(0!1!)^2}
+  1!2! \mathrm{L}[4, 1, 1] \\
+\end{aligned} \end{equation*}
+
+\begin{equation*} \begin{aligned}
+  \mathrm{L}^2[3] &=
+  \frac{2!}{1!(2!)^1}
+  1! \mathrm{L}[6] \\ &
++ \frac{2!}{2!(1!)^2}
+  2! \mathrm{L}[3, 3] \\
+\end{aligned} \end{equation*}
+
+\begin{equation*} \begin{aligned}
+  \mathrm{L}[3] \mathrm{L}[2] \mathrm{L}[1] &=
+  \frac{1!1!1!}{1!(1!1!1!)^1}
+  1! \mathrm{L}[6] \\ &
++ \frac{1!1!1!}{1!(1!1!0!)^1 \cdot 1!(0!0!1!)^1}
+  1!1! \mathrm{L}[5, 1] \\ &
++ \frac{1!1!1!}{1!(1!0!1!)^1 \cdot 1!(0!1!0!)^1}
+  1!1! \mathrm{L}[4, 2] \\ &
++ \frac{1!1!1!}{1!(1!0!0!)^1 \cdot 1!(0!1!1!)^1}
+  2! \mathrm{L}[3, 3] \\ &
++ \frac{1!1!1!}{1!(1!0!0!)^1 \cdot 1!(0!1!0!)^1 \cdot 1!(0!0!1!)^1}
+  1!1!1! \mathrm{L}[3, 2, 1] \\
+\end{aligned} \end{equation*}
+
+\begin{equation*} \begin{aligned}
+  \mathrm{L}[3] \mathrm{L}^3[1] &=
+  \frac{1!3!}{1!(1!3!)^1}
+  1! \mathrm{L}[6] \\ &
++ \frac{1!3!}{1!(1!2!)^1 \cdot 1!(0!1!)^1}
+  1!1! \mathrm{L}[5, 1] \\ &
++ \frac{1!3!}{1!(1!1!)^1 \cdot 1!(0!2!)^1}
+  1!1! \mathrm{L}[4, 2] \\ &
++ \frac{1!3!}{1!(1!1!)^1 \cdot 2!(0!1!)^2}
+  1!2! \mathrm{L}[4, 1, 1] \\ &
++ \frac{1!3!}{1!(1!0!)^1 \cdot 1!(0!3!)^1}
+  2! \mathrm{L}[3, 3] \\ &
++ \frac{1!3!}{1!(1!0!)^1 \cdot 1!(0!2!)^1 \cdot 1!(0!1!)^1}
+  1!1!1! \mathrm{L}[3, 2, 1] \\ &
++ \frac{1!3!}{1!(1!0!)^1 \cdot 3!(0!1!)^3}
+  1!3! \mathrm{L}[3, 1, 1, 1] \\
+\end{aligned} \end{equation*}
+
+\begin{equation*} \begin{aligned}
+  \mathrm{L}^3[2] &=
+  \frac{3!}{1!(3!)^1}
+  1! \mathrm{L}[6] \\ &
++ \frac{3!}{1!(2!)^1 \cdot 1!(1!)^1}
+  1!1! \mathrm{L}[4, 2] \\ &
++ \frac{3!}{3!(1!)^3}
+  3! \mathrm{L}[2, 2, 2] \\
+\end{aligned} \end{equation*}
+
+\begin{equation*} \begin{aligned}
+  \mathrm{L}^2[2] \mathrm{L}^2[1] &=
+  \frac{2!2!}{1!(2!2!)^1}
+  1! \mathrm{L}[6] \\ &
++ \frac{2!2!}{1!(2!1!)^1 \cdot 1!(0!1!)^1}
+  1!1! \mathrm{L}[5, 1] \\ &
++ \left(
+  \frac{2!2!}{1!(2!0!)^1 \cdot 1!(0!2!)^1}
++ \frac{2!2!}{1!(1!2!)^1 \cdot 1!(1!0!)^1}
+  \right)
+  1!1! \mathrm{L}[4, 2] \\ &
++ \frac{2!2!}{1!(2!0!)^1 \cdot 2!(0!1!)^2}
+  1!2! \mathrm{L}[4, 1, 1] \\ &
++ \frac{2!2!}{2!(1!1!)^2}
+  2! \mathrm{L}[3, 3] \\ &
++ \frac{2!2!}{1!(1!1!)^1 \cdot 1!(1!0!)^1 \cdot 1!(0!1!)^1}
+  1!1!1! \mathrm{L}[3, 2, 1] \\ &
++ \frac{2!2!}{1!(0!2!)^1 \cdot 2!(1!0!)^2}
+  3! \mathrm{L}[2, 2, 2] \\ &
++ \frac{2!2!}{2!(1!0!)^2 \cdot 2!(0!1!)^2}
+  2!2! \mathrm{L}[2, 2, 1, 1] \\
+\end{aligned} \end{equation*}
+
+\begin{equation*} \begin{aligned}
+  \mathrm{L}[2] \mathrm{L}^4[1] &=
+  \frac{1!4!}{1!(1!4!)^1}
+  1! \mathrm{L}[6] \\ &
++ \frac{1!4!}{1!(1!3!)^1 \cdot 1!(0!1!)^1}
+  1!1! \mathrm{L}[5, 1] \\ &
++ \left(
+  \frac{1!4!}{1!(1!2!)^1 \cdot 1!(0!2!)^1}
++ \frac{1!4!}{1!(0!4!)^1 \cdot 1!(1!0!)^1}
+  \right)
+  1!1! \mathrm{L}[4, 2] \\ &
++ \frac{1!4!}{1!(1!2!)^1 \cdot 2!(0!1!)^2}
+  1!2! \mathrm{L}[4, 1, 1] \\ &
++ \frac{1!4!}{1!(1!1!)^1 \cdot 1!(0!3!)^1}
+  2! \mathrm{L}[3, 3] \\ &
++ \left(
+  \frac{1!4!}{1!(1!1!)^1 \cdot 1!(0!2!)^1 \cdot 1!(0!1!)^1}
++ \frac{1!4!}{1!(0!3!)^1 \cdot 1!(1!0!)^1 \cdot 1!(0!1!)^1}
+  \right)
+  1!1!1! \mathrm{L}[3, 2, 1] \\ &
++ \frac{1!4!}{1!(1!1!)^1 \cdot 3!(0!1!)^3}
+  1!3! \mathrm{L}[3, 1, 1, 1] \\ &
++ \frac{1!4!}{1!(1!0!)^1 \cdot 2!(0!2!)^2}
+  3! \mathrm{L}[2, 2, 2] \\ &
++ \frac{1!4!}{1!(1!0!)^1 \cdot 1!(0!2!)^1 \cdot 2!(0!1!)^2}
+  2!2! \mathrm{L}[2, 2, 1, 1] \\ &
++ \frac{1!4!}{1!(1!0!)^1 \cdot 4!(0!1!)^4}
+  1!4! \mathrm{L}[2, 1, 1, 1, 1] \\
+\end{aligned} \end{equation*}
+
+\begin{equation*} \begin{aligned}
+  \mathrm{L}^6[1] &=
+  \frac{6!}{1!(6!)^1}
+  1! \mathrm{L}[6] \\ &
++ \frac{6!}{1!(5!)^1 \cdot 1!(1!)^1}
+  1!1! \mathrm{L}[5, 1] \\ &
++ \frac{6!}{1!(4!)^1 \cdot 1!(2!)^1}
+  1!1! \mathrm{L}[4, 2] \\ &
++ \frac{6!}{1!(4!)^1 \cdot 2!(1!)^2}
+  1!1! \mathrm{L}[4, 1, 1] \\ &
++ \frac{6!}{2!(3!)^2}
+  2! \mathrm{L}[3, 3] \\ &
++ \frac{6!}{1!(3!)^1 \cdot 1!(2!)^1 \cdot 1!(1!)^1}
+  1!1!1! \mathrm{L}[3, 2, 1] \\ &
++ \frac{6!}{1!(3!)^1 \cdot 3!(1!)^3}
+  1!1!1! \mathrm{L}[3, 1, 1, 1] \\ &
++ \frac{6!}{3!(2!)^3}
+  3! \mathrm{L}[2, 2, 2] \\ &
++ \frac{6!}{2!(2!)^2 \cdot 2!(1!)^2}
+  2!2! \mathrm{L}[2, 2, 1, 1] \\ &
++ \frac{6!}{1!(2!)^1 \cdot 4!(1!)^4}
+  1!4! \mathrm{L}[2, 1, 1, 1, 1] \\ &
++ \frac{6!}{6!(1!)^6}
+  6! \mathrm{L}[1, 1, 1, 1, 1, 1] \\
+\end{aligned} \end{equation*}
