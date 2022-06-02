@@ -1,0 +1,104 @@
+% !TeX root = sincotsec.tex
+
+\section{$\omega_0$-функции}
+
+\begin{equation*}\begin{aligned}
+&\ldots \\
+\omega_{(0,0)}(x) &= \frac{x^0}{0!} \\
+\omega_{(0,1)}(x) &= \frac{x^1}{1!} \\
+\omega_{(0,2)}(x) &= \frac{x^2}{2!} \\
+\omega_{(0,3)}(x) &= \frac{x^3}{3!} \\
+\omega_{(0,4)}(x) &= \frac{x^4}{4!} \\
+&\ldots \\
+\end{aligned}\end{equation*}
+
+\begin{equation*}
+\lim_{p \to 0} \frac{\omega_{(0, n)}(x + p) - \omega_{(0, n)}(x)}{p} = \omega_{(0, n - 1)}(x) \\
+\end{equation*}
+
+\begin{equation*} \begin{aligned}
+\mathrm{Q}_{(0,0)}(x_1, x_2) &=  
+  \elf_0(x_1) \elf_0(x_2) \\
+%
+\mathrm{Q}_{(0,1)}(x_1, x_2) &=  
+  \elf_1(x_1) \elf_0(x_2)
++ \elf_0(x_1) \elf_1(x_2) \\
+%
+\mathrm{Q}_{(0,2)}(x_1, x_2) &=  
+  \elf_2(x_1) \elf_0(x_2)
++ \elf_1(x_1) \elf_1(x_2)
++ \elf_0(x_1) \elf_2(x_2) \\
+%
+\mathrm{Q}_{(0,3)}(x_1, x_2) &=  
+  \elf_3(x_1) \elf_0(x_2)
++ \elf_2(x_1) \elf_1(x_2)
++ \elf_1(x_1) \elf_2(x_2) \\ &
++ \elf_0(x_1) \elf_3(x_2) \\
+%
+\mathrm{Q}_{(0,4)}(x_1, x_2) &=  
+  \elf_4(x_1) \elf_0(x_2)
++ \elf_3(x_1) \elf_1(x_2)
++ \elf_2(x_1) \elf_2(x_2) \\ &
++ \elf_1(x_1) \elf_3(x_2)
++ \elf_0(x_1) \elf_4(x_2) \\
+%
+&\ldots \\
+\end{aligned} \end{equation*}
+
+\begin{equation*} \begin{aligned}
+\mathrm{Q}_{(0,0)}(x_1, x_2, x_3) &=  
+  \elf_0(x_1) \elf_0(x_2) \elf_0(x_3) \\
+%
+\mathrm{Q}_{(0,1)}(x_1, x_2, x_3) &=  
+  \elf_1(x_1) \elf_0(x_2) \elf_0(x_3)
++ \elf_0(x_1) \elf_1(x_2) \elf_0(x_3)
++ \elf_0(x_1) \elf_0(x_2) \elf_1(x_3) \\
+%
+\mathrm{Q}_{(0,2)}(x_1, x_2, x_3) &=  
+  \elf_2(x_1) \elf_0(x_2) \elf_0(x_3)
++ \elf_1(x_1) \elf_1(x_2) \elf_0(x_3)
++ \elf_1(x_1) \elf_0(x_2) \elf_1(x_3) \\ &
++ \elf_0(x_1) \elf_2(x_2) \elf_0(x_3)
++ \elf_0(x_1) \elf_1(x_2) \elf_1(x_3)
++ \elf_0(x_1) \elf_0(x_2) \elf_2(x_3) \\
+%
+\mathrm{Q}_{(0,3)}(x_1, x_2, x_3) &=  
+  \elf_3(x_1) \elf_0(x_2) \elf_0(x_3)
++ \elf_2(x_1) \elf_1(x_2) \elf_0(x_3)
++ \elf_2(x_1) \elf_0(x_2) \elf_1(x_3) \\ &
++ \elf_1(x_1) \elf_2(x_2) \elf_0(x_3)
++ \elf_1(x_1) \elf_1(x_2) \elf_1(x_3)
++ \elf_1(x_1) \elf_0(x_2) \elf_2(x_3) \\ &
++ \elf_0(x_1) \elf_3(x_2) \elf_0(x_3)
++ \elf_0(x_1) \elf_2(x_2) \elf_1(x_3)
++ \elf_0(x_1) \elf_1(x_2) \elf_2(x_3) \\ &
++ \elf_0(x_1) \elf_0(x_2) \elf_3(x_3) \\
+%
+\mathrm{Q}_{(0,4)}(x_1, x_2, x_3) &=  
+  \elf_4(x_1) \elf_0(x_2) \elf_0(x_3)
++ \elf_3(x_1) \elf_1(x_2) \elf_0(x_3)
++ \elf_3(x_1) \elf_0(x_2) \elf_1(x_3) \\ &
++ \elf_2(x_1) \elf_2(x_2) \elf_0(x_3)
++ \elf_2(x_1) \elf_1(x_2) \elf_1(x_3)
++ \elf_2(x_1) \elf_0(x_2) \elf_2(x_3) \\ &
++ \elf_1(x_1) \elf_3(x_2) \elf_0(x_3)
++ \elf_1(x_1) \elf_2(x_2) \elf_1(x_3)
++ \elf_1(x_1) \elf_1(x_2) \elf_2(x_3) \\ &
++ \elf_1(x_1) \elf_0(x_2) \elf_3(x_3)
++ \elf_0(x_1) \elf_4(x_2) \elf_0(x_3)
++ \elf_0(x_1) \elf_3(x_2) \elf_1(x_3) \\ &
++ \elf_0(x_1) \elf_2(x_2) \elf_2(x_3)
++ \elf_0(x_1) \elf_1(x_2) \elf_3(x_3)
++ \elf_0(x_1) \elf_0(x_2) \elf_4(x_3) \\
+%
+&\ldots \\
+\end{aligned} \end{equation*}
+
+\begin{equation*} \begin{aligned}
+\elf_0(x + y) &= \mathrm{Q}_{(0,0)}(x, y) \\
+\elf_1(x + y) &= \mathrm{Q}_{(0,1)}(x, y) \\
+\elf_2(x + y) &= \mathrm{Q}_{(0,2)}(x, y) \\
+\elf_3(x + y) &= \mathrm{Q}_{(0,3)}(x, y) \\
+\elf_4(x + y) &= \mathrm{Q}_{(0,4)}(x, y) \\
+&\ldots \\
+\end{aligned} \end{equation*}

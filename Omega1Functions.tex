@@ -1,8 +1,6 @@
 % !TeX root = sincotsec.tex
 
-\chapter{Черновик}
-
-\section{$\omega$-функции}
+\section{$\omega_1$-функции}
 
 \begin{equation*} \begin{aligned}
 &&
@@ -151,88 +149,6 @@
 \mathrm{D}_1 \elg_n(x) &= \elg_{n - 1}(x) \\
 \mathrm{D}_1 \elh_n(x) &= \elh_{n - 1}(x) \\
 \end{aligned} \end{equation*}
-
-\subsection{Нулевой порядок}
-
-\begin{equation*} \begin{aligned}
-\mathrm{Q}_{(0,0)}(x_1, x_2) &=  
-  \elf_0(x_1) \elf_0(x_2) \\
-%
-\mathrm{Q}_{(0,1)}(x_1, x_2) &=  
-  \elf_1(x_1) \elf_0(x_2)
-+ \elf_0(x_1) \elf_1(x_2) \\
-%
-\mathrm{Q}_{(0,2)}(x_1, x_2) &=  
-  \elf_2(x_1) \elf_0(x_2)
-+ \elf_1(x_1) \elf_1(x_2)
-+ \elf_0(x_1) \elf_2(x_2) \\
-%
-\mathrm{Q}_{(0,3)}(x_1, x_2) &=  
-  \elf_3(x_1) \elf_0(x_2)
-+ \elf_2(x_1) \elf_1(x_2)
-+ \elf_1(x_1) \elf_2(x_2) \\ &
-+ \elf_0(x_1) \elf_3(x_2) \\
-%
-\mathrm{Q}_{(0,4)}(x_1, x_2) &=  
-  \elf_4(x_1) \elf_0(x_2)
-+ \elf_3(x_1) \elf_1(x_2)
-+ \elf_2(x_1) \elf_2(x_2) \\ &
-+ \elf_1(x_1) \elf_3(x_2)
-+ \elf_0(x_1) \elf_4(x_2) \\
-%
-&\ldots \\
-\end{aligned} \end{equation*}
-
-\begin{equation*} \begin{aligned}
-\mathrm{Q}_{(0,0)}(x_1, x_2, x_3) &=  
-  \elf_0(x_1) \elf_0(x_2) \elf_0(x_3) \\
-%
-\mathrm{Q}_{(0,1)}(x_1, x_2, x_3) &=  
-  \elf_1(x_1) \elf_0(x_2) \elf_0(x_3)
-+ \elf_0(x_1) \elf_1(x_2) \elf_0(x_3)
-+ \elf_0(x_1) \elf_0(x_2) \elf_1(x_3) \\
-%
-\mathrm{Q}_{(0,2)}(x_1, x_2, x_3) &=  
-  \elf_2(x_1) \elf_0(x_2) \elf_0(x_3)
-+ \elf_1(x_1) \elf_1(x_2) \elf_0(x_3)
-+ \elf_1(x_1) \elf_0(x_2) \elf_1(x_3) \\ &
-+ \elf_0(x_1) \elf_2(x_2) \elf_0(x_3)
-+ \elf_0(x_1) \elf_1(x_2) \elf_1(x_3)
-+ \elf_0(x_1) \elf_0(x_2) \elf_2(x_3) \\
-%
-\mathrm{Q}_{(0,3)}(x_1, x_2, x_3) &=  
-  \elf_3(x_1) \elf_0(x_2) \elf_0(x_3)
-+ \elf_2(x_1) \elf_1(x_2) \elf_0(x_3)
-+ \elf_2(x_1) \elf_0(x_2) \elf_1(x_3) \\ &
-+ \elf_1(x_1) \elf_2(x_2) \elf_0(x_3)
-+ \elf_1(x_1) \elf_1(x_2) \elf_1(x_3)
-+ \elf_1(x_1) \elf_0(x_2) \elf_2(x_3) \\ &
-+ \elf_0(x_1) \elf_3(x_2) \elf_0(x_3)
-+ \elf_0(x_1) \elf_2(x_2) \elf_1(x_3)
-+ \elf_0(x_1) \elf_1(x_2) \elf_2(x_3) \\ &
-+ \elf_0(x_1) \elf_0(x_2) \elf_3(x_3) \\
-%
-\mathrm{Q}_{(0,4)}(x_1, x_2, x_3) &=  
-  \elf_4(x_1) \elf_0(x_2) \elf_0(x_3)
-+ \elf_3(x_1) \elf_1(x_2) \elf_0(x_3)
-+ \elf_3(x_1) \elf_0(x_2) \elf_1(x_3) \\ &
-+ \elf_2(x_1) \elf_2(x_2) \elf_0(x_3)
-+ \elf_2(x_1) \elf_1(x_2) \elf_1(x_3)
-+ \elf_2(x_1) \elf_0(x_2) \elf_2(x_3) \\ &
-+ \elf_1(x_1) \elf_3(x_2) \elf_0(x_3)
-+ \elf_1(x_1) \elf_2(x_2) \elf_1(x_3)
-+ \elf_1(x_1) \elf_1(x_2) \elf_2(x_3) \\ &
-+ \elf_1(x_1) \elf_0(x_2) \elf_3(x_3)
-+ \elf_0(x_1) \elf_4(x_2) \elf_0(x_3)
-+ \elf_0(x_1) \elf_3(x_2) \elf_1(x_3) \\ &
-+ \elf_0(x_1) \elf_2(x_2) \elf_2(x_3)
-+ \elf_0(x_1) \elf_1(x_2) \elf_3(x_3)
-+ \elf_0(x_1) \elf_0(x_2) \elf_4(x_3) \\
-%
-&\ldots \\
-\end{aligned} \end{equation*}
-
-\subsection{Первый порядок}
 
 \begin{equation*} \begin{aligned}
 &\ldots \\
