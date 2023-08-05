@@ -1,5 +1,5 @@
-sincotsec.toc
-sincotsec.pdf
-sincotsec.log
-sincotsec.synctex.gz
-sincotsec.aux
+*.toc
+*.pdf
+*.log
+*.synctex.gz
+*.aux
