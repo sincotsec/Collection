@@ -1,28 +1,50 @@
 % !TeX root = ../Collection.tex
 
-\section{$\omega$-функции от двучлена}
+\section{$\omega$-функции от суммы двух}
 
-\begin{equation*} \begin{aligned}
-\omega_{(0,0)}(x_1 + x_2) &=   
-  \omega_{(0,0)}(x_1) \omega_{(0,0)}(x_2) \\
-%
-\omega_{(0,1)}(x_1 + x_2) &= 
-  \omega_{(0,1)}(x_1) \omega_{(0,0)}(x_2)
-+ \omega_{(0,0)}(x_1) \omega_{(0,1)}(x_2) \\
-%
-\omega_{(0,2)}(x_1 + x_2) &= 
-  \omega_{(0,2)}(x_1) \omega_{(0,0)}(x_2)
-+ \omega_{(0,1)}(x_1) \omega_{(0,1)}(x_2)
-+ \omega_{(0,0)}(x_1) \omega_{(0,2)}(x_2) \\
-%
-\omega_{(0,3)}(x_1 + x_2) &= 
-  \omega_{(0,3)}(x_1) \omega_{(0,0)}(x_2)
-+ \omega_{(0,2)}(x_1) \omega_{(0,1)}(x_2)
-+ \omega_{(0,1)}(x_1) \omega_{(0,2)}(x_2)
-+ \omega_{(0,0)}(x_1) \omega_{(0,3)}(x_2) \\
-%
+\begin{equation*}\begin{aligned}
+\omega_{0}(x_1 + x_2) &=   
+  \omega_{0}(x_1) \omega_{0}(x_2)
+\\
+\omega_{1}(x_1 + x_2) &= 
+  \omega_{1}(x_1) \omega_{0}(x_2)
++ \omega_{0}(x_1) \omega_{1}(x_2)
+\\
+\omega_{2}(x_1 + x_2) &= 
+  \omega_{2}(x_1) \omega_{0}(x_2)
++ \omega_{1}(x_1) \omega_{1}(x_2)
++ \omega_{0}(x_1) \omega_{2}(x_2)
+\\
+\omega_{3}(x_1 + x_2) &= 
+  \omega_{3}(x_1) \omega_{0}(x_2)
++ \omega_{2}(x_1) \omega_{1}(x_2)
++ \omega_{1}(x_1) \omega_{2}(x_2)
++ \omega_{0}(x_1) \omega_{3}(x_2)
+\\
 &\ldots \\
-\end{aligned} \end{equation*}
+\end{aligned}\end{equation*}
+
+\begin{equation*}\begin{aligned}
+\frac{(x_1 + x_2)^0}{0!} &=
+  \frac{x_1^0}{0!}\frac{x_2^0}{0!} 
+\\
+\frac{(x_1 + x_2)^1}{1!} &=
+  \frac{x_1^1}{1!}\frac{x_2^0}{0!} 
++ \frac{x_1^0}{0!}\frac{x_2^1}{1!}
+\\
+\frac{(x_1 + x_2)^2}{2!} &=
+  \frac{x_1^2}{2!}\frac{x_2^0}{0!}
++ \frac{x_1^1}{1!}\frac{x_2^1}{1!}
++ \frac{x_1^0}{0!}\frac{x_2^2}{2!}
+\\
+\frac{(x_1 + x_2)^3}{3!} &=
+  \frac{x_1^3}{3!}\frac{x_2^0}{0!}
++ \frac{x_1^2}{2!}\frac{x_2^1}{1!}
++ \frac{x_1^1}{1!}\frac{x_2^2}{2!}
++ \frac{x_1^0}{0!}\frac{x_2^3}{3!}
+\\
+&\ldots \\
+\end{aligned}\end{equation*}
 
 \begin{equation*} \begin{aligned}
 \omega_{(0,0)}(x_1 + x_2 + x_3) &= 
